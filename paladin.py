@@ -10,6 +10,6 @@ class Paladin(Character):
 
     def attack(self, target):
         damage = self.damage
-        if target.type == 'undead'
+        if target.type == 'undead':
             damage *= 1.2
         target.take_damage(self.damage)
