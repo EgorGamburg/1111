@@ -15,4 +15,5 @@ class Berserk(Character):
         return Character.__str__(self) + f'\nДод. шкода: {self.count_additional_damage()}'
 
     def attack(self, target):
+        print(f'{self.name} вражає та зводить з розуму свого противника!')
         target.take_damage(self.damage + self.count_additional_damage())
