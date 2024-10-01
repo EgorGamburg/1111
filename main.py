@@ -5,6 +5,7 @@ from assassin import Assassin
 from samurai import Samurai
 from ninja import Ninja
 from vampyre import Vampyre
+from warlock import Warlock
 
 players_list = []
 
@@ -23,6 +24,8 @@ elif player_1_class == 'ninja':
     player1 = Ninja(player_1_name, 100, 20, 2)
 elif player_1_class == 'vampyre':
     player1 = Vampyre(player_1_name, 120, 20, 3)
+elif player_1_class == 'warlock':
+    player1 = Warlock(player_1_name, 150, 15, 2)
 else:
     player1 = Character(player_1_name, 100, 10, 0)
 

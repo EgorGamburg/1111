@@ -5,6 +5,7 @@ from assassin import Assassin
 from samurai import Samurai
 from ninja import Ninja
 from vampyre import Vampyre
+from warlock import Warlock
 
 
 class Arena:
@@ -36,5 +37,7 @@ class Arena:
             self.players.append(Ninja(player_name, player_health, player_damage, player_defence))
         elif player_class == 'vampyre':
             self.players.append(Vampyre(player_name, player_health, player_damage, player_defence))
+        elif player_class == 'warlock':
+            self.players.append(Warlock(player_name, player_health, player_damage, player_defence))
         else:
             self.players.append(Character(player_name, player_health, player_damage, player_defence))
