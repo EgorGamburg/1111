@@ -9,7 +9,7 @@ class Vampyre(Character):
     def attack(self, target):
         target.take_damage(self.damage)
         health_restored = self.damage * self.life_steal_percent
-        self.health = min(self.health + health_restored, 100)  # Здоров'я не більше 100%
+        self.health = min(self.health + health_restored, 100)
         print(f"{self.name} завдав {self.damage} шкоди і відновив {health_restored} здоров'я!")
 
     def __str__(self):
