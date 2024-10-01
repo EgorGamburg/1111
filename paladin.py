@@ -10,6 +10,7 @@ class Paladin(Character):
 
     def attack(self, target):
         damage = self.damage
+        print(f'{self.name} наносить могутній удар мечем та наносить {self.damage} одиниць!')
         if target.type == 'undead':
             damage *= 1.2
         target.take_damage(self.damage)
