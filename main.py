@@ -6,6 +6,7 @@ from samurai import Samurai
 from ninja import Ninja
 from vampyre import Vampyre
 from warlock import Warlock
+from arena import Arena
 
 players_list = []
 
